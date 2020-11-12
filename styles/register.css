@@ -1,0 +1,129 @@
+
+.login{
+    background: linear-gradient(#000000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+.login_contenedor{
+    margin-top: -20px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(154, 132, 168, 0.955);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    padding: 60px 68px 40px;
+    min-height: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 0px;
+    align-items: center;
+
+}
+.login_contenedor--form{
+    display: flex;
+    flex-direction: column;
+
+}
+.login_contenedor--form label{
+    font-size: 14px;
+}
+
+.inputemail{
+    color: rgb(154, 132, 168);
+    background-color: rgb(7, 7, 7);
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    outline: none;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+.inputnombre{
+    color: rgb(154, 132, 168);
+    background-color: rgb(7, 7, 7);
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    outline: none;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.inputapellidos{
+    color: rgb(154, 132, 168);
+    background-color: rgb(7, 7, 7);
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    outline: none;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.inputcontra{
+    color: rgb(154, 132, 168);
+    background-color: rgb(7, 7, 7);
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    outline: none;
+    height: 50px;
+    border-radius: 10px;
+}
+
+button{
+    background-color: black;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.registra{
+    color: #000000;
+    text-decoration: none;
+}
+
+.registra2{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+footer {
+    background-color: #492e66;
+    height: 50px;
+    width: 100%;
+    margin-top: 60px;
+    bottom: 0;
+}
