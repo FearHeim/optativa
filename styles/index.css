@@ -1,0 +1,88 @@
+.carrusel{
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.carrusel__container{
+    white-space: nowrap;
+    margin: 70px, 0px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.carrusel__item{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 450px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms;
+    transform-origin: center left;
+    position: relative;
+}
+
+.carrusel__item:hover ~ .carrusel__item{
+    transform: translate3d(100px, 0, 0);
+}
+.carrusel__item:hover ~ .carrusel__item{
+    opacity: 1;
+}
+.carrusel__container:hover .carrusel__item:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+.carrusel__item--img{
+    width: 200px;
+    height: 250px;
+}
+.carrusel__item--detalle{
+    /*background: linear-gradient(to top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    opacity: 1;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    
+
+}
+
+.section__detalle{
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+.objeto_prin{
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.objeto{
+    float: left;
+    margin-top: 5px;
+    margin-left: 110px;
+    margin-bottom: 5px;
+
+}
+
+
+.image_pro{
+    width: 370px;
+    height: 300px;
+    border-radius: 30px;
+
+}
+
