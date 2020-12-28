@@ -1,0 +1,50 @@
+<!-- 
+    <section class="carrusel">
+
+        <div class="carrusel__container">
+            <div class="carrusel__item">
+                <a href="/html/Dato 1.html">
+                    <div class="carrusel__item--detalle">
+                        <section class="section__detalle">
+                            <p class="carrusel__item--detalle--titulo">Dato 1</p>
+                            <p class="carrusel__item--detalle--subtitulo">Dato 2</p>
+                        </section>
+                    </div>
+                </a>
+
+            </div>
+            <div class="carrusel__item">
+                <a href="/html/Dato 1.html">
+                    <div class="carrusel__item--detalle">
+                        <section class="section__detalle">
+                            <p class="carrusel__item--detalle--titulo">Dato 1</p>
+                            <p class="carrusel__item--detalle--subtitulo">Dato 2</p>
+                        </section>
+                    </div>
+                </a>
+
+            </div>
+            <div class="carrusel__item">
+                <a href="/html/Dato 1.html">
+                    <div class="carrusel__item--detalle">
+                        <section class="section__detalle">
+                            <p class="carrusel__item--detalle--titulo">Dato 1</p>
+                            <p class="carrusel__item--detalle--subtitulo">Dato 2</p>
+                        </section>
+                    </div>
+                </a>
+            </div>
+
+            <div class="carrusel__item">
+                <a href="/html/Dato 1.html">
+                    <div class="carrusel__item--detalle">
+                        <section class="section__detalle">
+                            <p class="carrusel__item--detalle--titulo">Dato 1</p>
+                            <p class="carrusel__item--detalle--subtitulo">Dato 2</p>
+                        </section>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+ -->

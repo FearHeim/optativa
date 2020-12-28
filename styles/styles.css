@@ -1,31 +1,52 @@
 body {
     background-color: #111111;
-    margin: 0px;
+    margin: 0%;
 }
 
 header {
-    background-color: #492e66;
+    background-color: #ffffff;
     height: 75px;
     width: 100%;
     justify-content: space-between;
 }
 
-.menu_items{
-    justify-content: space-between;
+.header2_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+
 }
+
+.header2_ul li {
+    float: left;
+}
+
+.header2_ul a {
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+}
+
+li a:hover:not(.active) {
+    background-color: #5c126b9a;
+  }
+
+/*#5c126b9a*/
 
 .logo {
-    width: 50px;
-    margin-top: 5px;
+    width: 200px;
+    margin-top: 10px;
     margin-left: 10px;
-    margin-bottom: 5px;
+    margin-bottom: -40px;
 }
 
-.seccion{
+.seccion {
     margin-top: 50px;
 }
 
-.title{
+.title {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -33,33 +54,17 @@ header {
     margin-top: 50px;
 }
 
-.div_prin {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 30px;
-}
 
-.parrafo {
-    color: white;
-    width: 75%;
-    justify-content: center;
-}
 
 footer {
-    background-color: #492e66;
+    background-color: #ffffff;
     height: 50px;
     width: 100%;
     margin-top: 60px;
-    bottom: 0;
-    
 }
 
-
-
-a{
+a {
     color: white;
-    
 }
 
 ::-webkit-scrollbar {

@@ -1,0 +1,27 @@
+
+.div_prin {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.parrafo {
+    color: white;
+    width: 75%;
+    justify-content: center;
+}
+
+.div_2{
+    color: white;
+    width: 75%;
+    justify-content: center; 
+}
+
+footer {
+    background-color: #ffffff;
+    height: 50px;
+    width: 100%;
+    margin-top: 60px;
+    position: 0;
+}
