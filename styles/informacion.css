@@ -1,4 +1,3 @@
-
 .div_prin {
     display: flex;
     justify-content: center;
@@ -6,22 +5,56 @@
     margin-top: 30px;
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 3em;
+}
+
 .parrafo {
     color: white;
-    width: 75%;
+    width: 65%;
     justify-content: center;
+    line-height: 1.6;
 }
 
-.div_2{
+p {
     color: white;
-    width: 75%;
-    justify-content: center; 
+    
 }
 
-footer {
-    background-color: #ffffff;
-    height: 50px;
-    width: 100%;
-    margin-top: 60px;
-    position: 0;
+.item_main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: rgba(90, 26, 99, 0.199);
+
 }
+
+.item_descripcion_p{
+    color: white;
+    width: 90%;
+    margin-left: 15px;
+    justify-content: center;
+    line-height: 1.6;
+    flex: auto;
+}
+
+.item_main img{
+    width: 600px;
+    height: 400px;
+}
+
+@media (max-width: 800px) {
+    .item_main img{
+        width: 100%;
+        height: 40%;
+    }
+
+    .item_main {
+      flex-direction: column;
+    }
+  }
