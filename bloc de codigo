@@ -48,3 +48,55 @@
         </div>
     </section>
  -->
+
+
+ https://images2.alphacoders.com/235/thumb-1920-235470.jpg
+
+
+     <section class="objeto_prin">
+        <section class="grid-1">
+            <div class="objeto">
+                <a href="/src/productos.html">
+                    <img class="image_pro"
+                        src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59c4f5655bafe82c692a7052/gato-marron_0.jpg"
+                        alt="">
+                </a>
+            </div>
+            <div class="objeto">
+                <a href="/src/productos.html">
+                    <img class="image_pro"
+                        src="https://www.infobae.com/new-resizer/oWZXB8xLLNfiTgqgTJ49AfA5cFk=/420x236/filters:format(jpg):quality(85)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/3KJ4AFYLUZAG7DYO7IJULMZ3P4.jpg"
+                        alt="">
+                </a>
+            </div>
+            <div class="objeto">
+                <a href="/src/productos.html">
+                    <img class="image_pro"
+                        src="https://static.nationalgeographicla.com/files/styles/image_3200/public/01-cat-questions-nationalgeographic_1228126.jpg?w=1600&h=900"
+                        alt="">
+                </a>
+            </div>
+            <div class="objeto">
+                <a href="/src/productos.html">
+                    <img class="image_pro"
+                        src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/facebook_share/public/purina-por-que-vemos-tan-felices-a-los-gatos-en-cajas-de-carton.png?itok=kIPae4RU"
+                        alt="">
+                </a>
+            </div>
+            <div class="objeto">
+                <a href="/src/productos.html">
+                    <img class="image_pro"
+                        src="https://www.elcomercio.com/files/article_main/uploads/2018/08/08/5b6b28ab0319d.jpeg"
+                        alt="">
+                </a>
+            </div>
+            <div class="objeto">
+                <a href="/src/productos.html">
+                    <img class="image_pro"
+                        src="https://www.fundacion-affinity.org/sites/default/files/descubre-como-se-comporta-un-gato.jpg?itok=n2kVSTSl"
+                        alt="">
+                </a>
+            </div>
+        </section>
+
+    </section>

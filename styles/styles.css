@@ -10,13 +10,15 @@ header {
     justify-content: space-between;
 }
 
+
 .header2_ul {
+    height: 40px;
+    font-size: large;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: black;
-
 }
 
 .header2_ul li {
@@ -31,7 +33,7 @@ header {
 
 li a:hover:not(.active) {
     background-color: #5c126b9a;
-  }
+}
 
 /*#5c126b9a*/
 
@@ -54,7 +56,9 @@ li a:hover:not(.active) {
     margin-top: 50px;
 }
 
-
+.mySlides {
+    display: none;
+}
 
 footer {
     background-color: #ffffff;
