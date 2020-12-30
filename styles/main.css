@@ -1,0 +1,128 @@
+.buscador_div {
+    text-align: center;
+}
+
+.buscador {
+    margin-top: 1%;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(90, 26, 99, 0.5);
+    color: rgb(177, 177, 177);
+    border-radius: 30px;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    width: 70%;
+}
+
+::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.categorias_div {
+    text-align: center;
+}
+
+.categorias_div_se {
+    overflow: hidden;
+}
+
+.categorias_div_img {
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.categorias_div_img img {
+    width: 450px;
+    height: 300px;
+}
+
+/*Opacidad*/
+
+.imagen {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.confirmar_div {
+    text-align: center; 
+    transition: .5s ease;
+    opacity: 0;
+    margin-left: 10%;
+    width: 75%;
+    transform: translateY(-370%);
+}
+
+.categorias_div_img:hover .imagen {
+    opacity: 0.1;
+}
+
+.categorias_div_img:hover .confirmar_div {
+    opacity: 1;
+}
+
+.texto {
+    background-color: #5c126b9a;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.texto:hover{
+    background-color: #5c126b6c;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .buscador {
+        width: 100%;
+    }
+    .title {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+    }
+    .categorias_div_se {
+        flex-direction: column;
+    }
+    .categorias_div_img {
+        float: left;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .categorias_div_img img {
+        width: 100%;
+        height: 100%;
+    }
+    .confirmar_div {
+        text-align: center; 
+        transition: .5s ease;
+        opacity: 0;
+        margin-left: 10%;
+        width: 75%;
+        transform: translateY(-270%);
+    }
+    
+}
+
+div.desc {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+}
+
+@media (min-width: 1920px) {
+    .categorias_div_img img {
+        width: 570px;
+        height: 300px;
+    }
+}

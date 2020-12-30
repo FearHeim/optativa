@@ -40,7 +40,7 @@ p {
     margin-left: 15px;
     justify-content: center;
     line-height: 1.6;
-    flex: auto;
+    flex: 50%;
 }
 
 .item_main img{
