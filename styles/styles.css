@@ -35,6 +35,10 @@ li a:hover:not(.active) {
     background-color: #5c126b9a;
 }
 
+.carrito{
+    height: 20px;
+}
+
 /*#5c126b9a*/
 
 .logo {

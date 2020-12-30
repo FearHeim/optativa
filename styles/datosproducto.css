@@ -1,0 +1,9 @@
+.datos_div{
+    display: flex;
+}
+
+.datos_div_img img{
+    height: 500px;
+    width: 700px;
+}
+

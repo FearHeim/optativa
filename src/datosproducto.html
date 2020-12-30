@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/datosproducto.css">
 </head>
+
 <body>
     <header>
         <a class="logo_a" href="/">
@@ -21,8 +24,32 @@
             <li><a href="/src/usinformation.html">Sobre Nosotros</a></li>
             <li><a href="/src/productos.html">Productos</a></li>
             <li><a href="/src/contacto.html">Contacto</a></li>
+            <li style="float:right"><a href="/src/transaccion.html"><img class="carrito" src="https://images.vexels.com/media/users/3/200060/isolated/lists/e39eb7217c7b5157d2c9154564d76598-icono-de-carrito-de-compras-rosa.png" alt=""> Carrito de Compras</a></li>
         </ul>
     </div>
 
+    <div class="datos_div">
+        <div class="datos_div_img">
+            <img src="https://www.muycomputer.com/wp-content/uploads/2019/08/tarjeta-gráfica-2.jpg" alt="Producto">
+        </div>
+        <div>
+            <h2>Tarjeta Gráfica GTX 980ti Gigabyte</h2>
+            <ul>
+                <li>Datos</li>
+                <li>Datos</li>
+                <li>Datos</li>
+                <li>Datos</li>
+            </ul>
+            <input onclick="alerta()" type="button" value="Agregar al carrito de compra">
+        </div>
+    </div>
+
 </body>
+<script>
+    function alerta() {
+        alert("Se ha agregado al carrito");
+        event.preventDefault()
+    }
+</script>
+
 </html>
