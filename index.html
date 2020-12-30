@@ -29,13 +29,13 @@
     </div>
 
 
-    <div>
-        <img class="mySlides" src="https://i.pinimg.com/originals/de/64/08/de6408f5cfadd4ec371eea1e9bf6a93c.jpg"
-            style="width:100%; height:500px;">
-        <img class="mySlides" src="https://www.galax.com/downloads/newsletter/202011/TOP-BANNER_K2.png"
-            style="width:100% ; height:500px;">
-        <img class="mySlides" src="https://www.aorus.com/Z490-soar-to-new-heights/assets/images/subpage_imgs_C11-E.jpg"
-            style="width:100% ; height:500px;">
+    <div class="imagen_div">
+        <img class="imagen_slide" src="https://i.pinimg.com/originals/de/64/08/de6408f5cfadd4ec371eea1e9bf6a93c.jpg"
+            >
+        <img class="imagen_slide" src="https://www.galax.com/downloads/newsletter/202011/TOP-BANNER_K2.png"
+            >
+        <img class="imagen_slide" src="https://www.aorus.com/Z490-soar-to-new-heights/assets/images/subpage_imgs_C11-E.jpg"
+            >
     </div>
 
 
@@ -135,19 +135,19 @@
     </footer>
 </body>
 <script>
-    var myIndex = 0;
+    var Slide = 0;
     carrusel();
 
     function carrusel() {
         var i;
-        var x = document.getElementsByClassName("mySlides");
+        var x = document.getElementsByClassName("imagen_slide");
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
-        myIndex++;
-        if (myIndex > x.length) { myIndex = 1 }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carrusel, 2000); // Change image every 2 seconds
+        Slide++;
+        if (Slide > x.length) { Slide = 1 }
+        x[Slide - 1].style.display = "block";
+        setTimeout(carrusel, 2000); 
     }
 </script>
 

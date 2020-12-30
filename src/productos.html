@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/productos.css">
 </head>
+
 <body>
     <header>
         <a class="logo_a" href="/">
@@ -14,7 +16,7 @@
                 src="https://cdn.discordapp.com/attachments/674855437702660116/793227511865540618/a-absolute-empire.svg"
                 alt="logo ProtoQ">
         </a>
-        
+
     </header>
     <div>
         <ul class="header2_ul">
@@ -26,53 +28,139 @@
         </ul>
     </div>
 
-    <div class="categorias">
-        <ul>
-            <li>a</li>
-            <li>a</li>
-            <li>a</li>
-        </ul>
-        <ul>
-            <li>a</li>
-            <li>y</li>
-            <li>y</li>
-        </ul>
-        <ul>
-            <li>y</li>
-            <li>y</li>
-            <li>y</li>
-        </ul>
-        
+    <div class="categorias_principal">
+        <div class="categorias">
+            <h2 style="color: white;">Filtros de búsqueda</h2>
+            <ul>
+                <h3>Precio</h3>
+                <li>Menos de 50$</li>
+                <li>50$ a 100$</li>
+                <li>100$ a 200$</li>
+                <li>200$ a más</li>
+                <form action="">
+                    <input class="input_categoria" type="text" placeholder="$ Desde"><input class="input_categoria" type="text" placeholder="$ Hasta"><input
+                        type="button" value="Buscar">
+                </form>
+            </ul>
+            <ul>
+                <h3>Con ofertas</h3>
+                <form action="">
+                    <li><input type="checkbox">Ofertas especiales</input></li>
+                </form>
+            </ul>
+            <ul>
+                <h3>Marca</h3>
+                <form action="">
+                    <li><input type="checkbox">ASUS</input></li>
+                    <li><input type="checkbox">Gigabyte</input></li>
+                    <li><input type="checkbox">MSI</input></li>
+                    <li><input type="checkbox">Samsung</input></li>
+                    <li><input type="checkbox">AMD</input></li>
+                    <li><input type="checkbox">Intel</input></li>
+                </form>
+            </ul>
+            <ul>
+                <h3>Estado</h3>
+                <form action="">
+                    <li><input type="checkbox">Nuevo</input></li>
+                    <li><input type="checkbox">Usado</input></li>
+                    <li><input type="checkbox">Reacondicionado</input></li>
+                </form>
+            </ul>
+
+        </div>
+
+        <div class="productos_div">
+            <ul class="productos_div_ul">
+                <li onclick="location.href='/src/datosproducto.html';" class="productos_div_li">
+                    <div>
+                        <img class="productos_div_img" src="https://www.corsair.com/medias/sys_master/images/images/h7a/h49/8988098330654/-CMK8GX4M1D3000C16-Gallery-VENG-LPX-BLK-01.png" alt="producto">
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4 3600 (PC4-28800) C18 1.35 V - Memoria de sobremesa, color negro</li>
+                            <li>Corsair</li>
+                            <li>86.99$</li>
+                            <li>Nuevo</li>
+                        </ul>
+                    </div>
+                    
+                </li>
+                <li onclick="location.href='/src/datosproducto.html';" class="productos_div_li">
+                    <div>
+                        <img class="productos_div_img" src="https://lh3.googleusercontent.com/proxy/f1xhrYd18Y8vfk7lRBneap90X2QH6kL_nvflE35B0CYGb8MzXYllvNKJx7liX-StGqZSdtFgiEWffis7soGGL4HH57xReOhYAMhubDFaUoClKkpddcOSTXRLRg" alt="producto">
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Motherboard Gigabyte A320m</li>
+                            <li>Gigabyte</li>
+                            <li>70.99$</li>
+                            <li>Nuevo</li>
+                        </ul>
+                    </div>
+                </li>
+                <li onclick="location.href='/src/datosproducto.html';" class="productos_div_li">
+                    <div>
+                        <img class="productos_div_img" src="https://nanotroniconline.com/wp-content/uploads/2020/08/mouse-corsair-m55-rgb-pro-nanotronic.png" alt="producto">
+                    </div>                    
+                    <div>
+                        <ul>
+                            <li>Mouse Corsair Gamer M55 RGB Pro</li>
+                            <li>Corsair</li>
+                            <li>45.00$</li>
+                            <li>Reacondicionado</li>
+                        </ul>
+                    </div>
+                </li>
+                <li onclick="location.href='/src/datosproducto.html';" class="productos_div_li">
+                    <div>
+                        <img class="productos_div_img" src="https://nanoteh.md/radix/img/items/20201005/16/5f7b26cb9149c-202010051659.png" alt="producto">
+                    </div>                    
+                    <div>
+                        <ul>
+                            <li>Case Gamemax Nova n6 </li>
+                            <li>Gamemax</li>
+                            <li>30.00$</li>
+                            <li>Nuevo</li>
+                        </ul>
+                    </div>
+                </li>
+                <li onclick="location.href='/src/datosproducto.html';" class="productos_div_li">
+                    <div >
+                        <img class="productos_div_img" src="https://www.computerevolution.com.co/wp-content/uploads/2020/01/ryzen9.png" alt="producto">
+                    </div>                    
+                    <div>
+                        <ul>
+                            <li>AMD Ryzen 9 3900XT 12 núcleos, 24 hilos desbloqueados procesador de escritorio sin refrigerador</li>
+                            <li>AMD</li>
+                            <li>499.00$</li>
+                            <li>Nuevo</li>
+                        </ul>
+                    </div>
+                </li>
+                <li onclick="location.href='/src/datosproducto.html';" class="productos_div_li">
+                    <div >
+                        <img class="productos_div_img" src="https://static.acer.com/up/Resource/Acer/Laptops/NITRO_5_2018/Image/20180327/NITRO%205_preview.png" alt="producto">
+                    </div>                    
+                    <div>
+                        <ul>
+                            <li>Acer Nitro 5 AN515-54-51M5-15.6"-i5-9300H-NVIDIA GTX 1650-8GB-Disco duro de 1TB+SSD de 128GB</li>
+                            <li>Acer</li>
+                            <li>756.99$</li>
+                            <li>Nuevo</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+      
+
+        </div>
     </div>
 
-    <div>
-        <ul>
-            <li>y</li>
-            <li>y</li>
-            <li>y</li>
-        </ul>
-        <ul>
-            <li>y</li>
-            <li>y</li>
-            <li>y</li>
-        </ul>
-        <ul>
-            <li>y</li>
-            <li>y</li>
-            <li>y</li>
-        </ul>
-        <ul>
-            <li>y</li>
-            <li>y</li>
-            <li>y</li>
-        </ul>
-        <ul>
-            <li>y</li>
-            <li>y</li>
-            <li>y</li>
-        </ul>
-        
-    </div>
+    <footer>
+
+    </footer>
 
 </body>
+
 </html>
