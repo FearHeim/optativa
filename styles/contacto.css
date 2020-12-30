@@ -1,0 +1,63 @@
+.contacto_div {
+    margin-top: 50px;
+    color: white;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.li_direcccion{
+    line-height: 2;
+
+}
+
+.direccion_div {
+    margin-left: 100px;
+    margin-right: 20%;
+    text-decoration: none;
+}
+
+.formulario_div {
+    text-align: left;
+    width: 50%;
+}
+
+form{
+    font-size: large;
+}
+
+button {
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight:500;
+}
+
+input {
+    height: 20px;
+    border-radius: 5px;
+    text-decoration: purple;
+    outline: none;
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.mensaje {
+    width: 90%;
+    height: 150px;
+    border-radius: 5px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
