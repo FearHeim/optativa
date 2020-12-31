@@ -37,14 +37,15 @@
             <section class="login">
                 <section class="login_contenedor">
                   
-                    <form class="login_contenedor--form" action="">
-                        <input class="inputemail" type="email" placeholder="Correo">
-                        <input class="inputcontra" type="password" placeholder="Contraseña">
-                        <button class="button"><a href="/src/main.html">Ingresar</a> </button>
-                        <h5 class="registra">¿No tienes cuenta?</h5>
-                        <a class="registra2" href="/src/register.html">Registrarse</a>
+                    <form id="form_principal" class="login_contenedor--form">
+                        <input required id="inputemail" class="inputemail" type="email" placeholder="Correo">
+                        <input required id="contra" class="inputcontra" type="password" placeholder="Contraseña">
+                        <button type="submit">Ingresar</button>
+<!--                         <input onclick="VerificarUsuario()" type="button" class="button" value="Ingresar">
+ -->                        
                     </form>
-                    
+                    <h5 class="registra">¿No tienes cuenta?</h5>
+                        <a class="registra2" href="/src/register.html">Registrarse</a>
                 </section>
             </section>
         </div>
@@ -56,5 +57,19 @@
         <a href="/src/usinformation.html">Sobre nosotros</a>
     </footer>
 </body>
+
+<script>
+    document.getElementById('form_principal').addEventListener('submit', VerificarUsuario);
+
+    function VerificarUsuario(e){
+        let email=(document.getElementById('inputemail').value)
+        if(email=="admin@admin.com"){
+            location.href='/src/admin.html'
+        }else{
+            location.href='/src/main.html'
+        }
+        e.preventDefault()
+    }
+</script>
 
 </html>
