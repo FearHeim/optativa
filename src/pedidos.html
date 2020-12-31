@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo_a" href="/">
+            <img class="logo"
+                src="https://cdn.discordapp.com/attachments/674855437702660116/793227511865540618/a-absolute-empire.svg"
+                alt="logo ProtoQ">
+        </a>
+
+    </header>
+    <div>
+        <ul class="header2_ul">
+            <li><a href="/src/admin.html">Inicio</a></li>
+            <li><a href="/src/usinformation.html">Sobre Nosotros</a></li>
+            <li><a href="/src/productos.html">Productos</a></li>
+            <li><a href="/src/contacto.html">Contacto</a></li>
+            <li style="float:right"><a href="/">Salir</a></li>
+
+        </ul>
+    </div>
+
+    <div>
+        <h2>Pedidos</h2>
+        <div>
+            <ol>
+                <form id="form_pedidos">
+                    <select name="" id="select">
+                        <option value="">Seleccione un pedido</option>
+                        <option value="Pedido 1">Pedido 1</option>
+                        <option value="Pedido 2">Pedido 2</option>
+                        <option value="Pedido 3">Pedido 3</option>
+                        <option value="Pedido 4">Pedido 4</option>
+                        <option value="Pedido 5">Pedido 5</option>
+                    </select>
+                    <button type="submit">Escoger</button>
+                </form>
+            </ol>
+        </div>
+    </div>
+
+    <div>
+        <h3>Administrar pedidos</h3>
+        <ol>
+            <li id="pedido_li"></li>
+            <p>Descipcion del pedido - dd/mm/aa</p>
+            <form name="name" id="form_estado">
+                <select class="estado_select" type="select" id="estado">
+                    <option value="">Seleccione uno</option>
+                    <option id="Aprobado">Aprobar pedido</option>
+                    <option id="Rechazado">Rechazar pedido</option>
+                    <option id="Modificar">Modificar pedido</option>
+
+                </select>
+                <button type="owo">Guardar estado</button>
+            </form>
+            <h4>Estado del pedido</h4>
+            <p id="estado1">En espera</p>
+        </ol>
+
+        <button onclick="location.href='/src/admin.html';">< Volver</button>
+    </div>
+
+</body>
+<script>
+    document.getElementById('form_pedidos').addEventListener('submit', ObtenerPedido);
+
+    function ObtenerPedido(e) {
+        let pedido = document.getElementById('select').value;
+        document.getElementById("pedido_li").innerHTML = pedido;
+        e.preventDefault()
+    }
+
+    document.getElementById('form_estado').addEventListener('submit', Estado);
+
+    function Estado(e){
+        let estado=document.getElementById('estado').value;
+        document.getElementById("estado1").innerHTML = estado;
+        e.preventDefault()
+        alert("Estado del pedido actualizado")
+    }
+</script>
+
+</html>
