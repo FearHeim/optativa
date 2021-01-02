@@ -1,5 +1,13 @@
+.title_register{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    margin-bottom: -10px;
+}
 
-.login{
+.register{
     background: linear-gradient(#000000);
     display: flex;
     align-items: center;
@@ -8,12 +16,13 @@
     padding: 0px 30px;
     min-height: calc(100vh - 200px);
 }
-.login_contenedor{
+
+.register_contenedor{
     margin-top: -20px;
     color: rgb(0, 0, 0);
-    background-color: rgba(154, 132, 168, 0.955);
+    background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid rgb(0, 0, 0);
-    border-radius: 40px;
+    border-radius: 20px;
     padding: 60px 68px 40px;
     min-height: 350px;
     width: 300px;
@@ -24,24 +33,25 @@
     align-items: center;
 
 }
-.login_contenedor--form{
+
+.register_contenedor--form{
     display: flex;
     flex-direction: column;
 
 }
-.login_contenedor--form label{
+.register_contenedor--form label{
     font-size: 14px;
 }
 
+
 .inputemail{
-    color: rgb(154, 132, 168);
+    color: rgb(255, 255, 255);
     background-color: rgb(7, 7, 7);
     border-left: 0px;
     border-top: 0px;
     border-right: 0px;
     border-bottom: 2px solid rgb(0, 0, 0);
     font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
     margin-bottom: 15px;
     padding: 0 15px;
     outline: none;
@@ -50,15 +60,15 @@
 
 }
 
+
 .inputnombre{
-    color: rgb(154, 132, 168);
+    color: rgb(255, 255, 255);
     background-color: rgb(7, 7, 7);
     border-left: 0px;
     border-top: 0px;
     border-right: 0px;
     border-bottom: 2px solid rgb(0, 0, 0);
     font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
     margin-bottom: 15px;
     padding: 0 15px;
     outline: none;
@@ -67,14 +77,13 @@
 }
 
 .inputapellidos{
-    color: rgb(154, 132, 168);
+    color: rgb(255, 255, 255);
     background-color: rgb(7, 7, 7);
     border-left: 0px;
     border-top: 0px;
     border-right: 0px;
     border-bottom: 2px solid rgb(0, 0, 0);
     font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
     margin-bottom: 15px;
     padding: 0 15px;
     outline: none;
@@ -83,14 +92,13 @@
 }
 
 .inputcontra{
-    color: rgb(154, 132, 168);
+    color: rgb(255, 255, 255);
     background-color: rgb(7, 7, 7);
     border-left: 0px;
     border-top: 0px;
     border-right: 0px;
     border-bottom: 2px solid rgb(0, 0, 0);
     font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
     margin-bottom: 15px;
     padding: 0 15px;
     outline: none;
@@ -100,12 +108,20 @@
 
 button{
     background-color: black;
-    border-radius: 20px;
+    border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 10px;
     color: white;
+    cursor: pointer;
+    font-weight: bold;
 }
+
+button:hover{
+    background-color: #34093b;
+
+}
+
 
 .registra{
     color: #000000;
@@ -119,4 +135,39 @@ button{
     font-size: large;
 }
 
+.registra2:hover{
+    color: #5c126bf3;
+}
 
+
+@media only screen and (max-width: 800px) {
+    .register_contenedor{
+        background-color: transparent;
+        border: 0;
+    }
+
+    .inputemail{
+        color: #ffffff;
+    }
+
+    .inputcontra{
+        color: white;
+    }
+
+    .registra{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    
+    .registra2{
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .registra2:hover{
+        color: #5c126bf3;
+    }
+}
