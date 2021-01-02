@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/pedidos.css">
 </head>
 
 <body>
@@ -19,55 +20,60 @@
     </header>
     <div>
         <ul class="header2_ul">
-            <li><a href="/src/admin.html">Inicio</a></li>
-            <li><a href="/src/usinformation.html">Sobre Nosotros</a></li>
-            <li><a href="/src/productos.html">Productos</a></li>
-            <li><a href="/src/contacto.html">Contacto</a></li>
+            <li><a href="/src/admin.html">Volver a la página anterior</a></li>
             <li style="float:right"><a href="/">Salir</a></li>
 
         </ul>
     </div>
 
-    <div>
-        <h2>Pedidos</h2>
+    <div class="div_pedidos">
         <div>
+            <h2>Seleccione el pedido que desea actualizar</h2>
+            <div>
+                <ol>
+                    <form id="form_pedidos">
+                        <select class="form_pedidos_select" name="" id="select">
+                            <option value="">Seleccione un pedido</option>
+                            <option value="Pedido 1 - GTX 1050ti x500">Pedido 1 - GTX 1050ti x500</option>
+                            <option value="Pedido 2 - Fuente Thermaltake SP-550PCBUS x 100">Pedido 2 - Fuente
+                                Thermaltake SP-550PCBUS x 100</option>
+                            <option value="Pedido 3 - EVGA Supernova 220-G2-0550-Y1 x150">Pedido 3 - EVGA Supernova
+                                220-G2-0550-Y1 x150</option>
+                            <option value="Pedido 4 - Corsair iCUE 220T RGB Airflow x100">Pedido 4 - Corsair iCUE 220T
+                                RGB Airflow x100</option>
+                            <option value="Pedido 5 - Motherboard GIGABYTE B365M DS3H x200">Pedido 5 - Motherboard
+                                GIGABYTE B365M DS3H x200</option>
+                            <option value="Pedido 6 - GTX 1560 x300">Pedido 6 - GTX 1560 x300</option>
+                            <option value="Pedido 7 - GTX 750ti x100">Pedido 7 - GTX 750ti x100</option>
+                        </select>
+                        <button type="submit">Escoger</button>
+                    </form>
+                </ol>
+            </div>
+        </div>
+
+        <div class="div_3">
+            <h3>Administrar pedidos</h3>
             <ol>
-                <form id="form_pedidos">
-                    <select name="" id="select">
-                        <option value="">Seleccione un pedido</option>
-                        <option value="Pedido 1">Pedido 1</option>
-                        <option value="Pedido 2">Pedido 2</option>
-                        <option value="Pedido 3">Pedido 3</option>
-                        <option value="Pedido 4">Pedido 4</option>
-                        <option value="Pedido 5">Pedido 5</option>
+                <li id="pedido_li">Pedido</li>
+                <p>Descipcion del pedido </p>
+                <input type="date" name="" id="" value="2020-05-22" min="2020-01-01" max="2021-12-31">
+                <form name="name" id="form_estado">
+                    <select class="estado_select form_pedidos_select" type="select" id="estado">
+                        <option value="">Seleccione uno</option>
+                        <option id="Aprobado">Aprobar pedido</option>
+                        <option id="Rechazado">Rechazar pedido</option>
+                        <option id="Modificar">Modificar pedido</option>
+
                     </select>
-                    <button type="submit">Escoger</button>
+                    <button>Guardar estado</button>
                 </form>
+                <h4>Estado del pedido</h4>
+                <p id="estado1">En espera</p>
             </ol>
         </div>
     </div>
 
-    <div>
-        <h3>Administrar pedidos</h3>
-        <ol>
-            <li id="pedido_li"></li>
-            <p>Descipcion del pedido - dd/mm/aa</p>
-            <form name="name" id="form_estado">
-                <select class="estado_select" type="select" id="estado">
-                    <option value="">Seleccione uno</option>
-                    <option id="Aprobado">Aprobar pedido</option>
-                    <option id="Rechazado">Rechazar pedido</option>
-                    <option id="Modificar">Modificar pedido</option>
-
-                </select>
-                <button >Guardar estado</button>
-            </form>
-            <h4>Estado del pedido</h4>
-            <p id="estado1">En espera</p>
-        </ol>
-
-        <button onclick="location.href='/src/admin.html';">< Volver</button>
-    </div>
 
     <footer>
         <a href="/src/acerca.html">Acerca de</a>
@@ -85,11 +91,11 @@
 
     document.getElementById('form_estado').addEventListener('submit', Estado);
 
-    function Estado(e){
-        let estado=document.getElementById('estado').value;
+    function Estado(e) {
+        let estado = document.getElementById('estado').value;
         document.getElementById("estado1").innerHTML = estado;
         e.preventDefault()
-        alert("Estado del pedido actualizado y ha pasado a: " +estado)
+        alert("Estado del pedido actualizado y ha pasado a: " + estado)
     }
 </script>
 

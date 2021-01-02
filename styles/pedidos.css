@@ -1,0 +1,70 @@
+.div_pedidos {
+    display: flex;
+    margin-top: 25px;
+    text-align: left;
+    line-height: 2;
+    margin-left: 7%;
+    font-size: larger
+}
+
+.form_pedidos_select {
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+}
+
+input{
+    border-radius: 20px;
+}
+
+button{
+    padding: 10px 0px 10px 0px;
+    border-radius: 5px;
+
+}
+
+.div_pedidos li {
+    list-style: none;
+}
+
+.div_3 {
+    margin-left: 10%;
+}
+
+#estado1{
+    border-style:groove;
+    border-radius: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0
+}
+
+@media only screen and (max-width: 800px) {
+    .div_pedidos {
+        display: inline;
+        margin-top: 25px;
+        text-align: left;
+        line-height: 1.6;
+        margin-left: 1%;
+        font-size: large;
+        margin-bottom: 20px;
+    }
+    h2 {
+        margin-left: 1%;
+        text-align: center;
+    }
+    .form_pedidos_select {
+        margin-left: -35px;
+        padding: 0px;
+        width: 100%;
+    }
+    button{
+        padding: 0;
+    }
+    
+    footer {
+        position: relative;
+        bottom: 0
+    }
+}
