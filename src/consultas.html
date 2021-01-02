@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de compras</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/consultas.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo_a" href="/">
+            <img class="logo"
+                src="https://cdn.discordapp.com/attachments/674855437702660116/793227511865540618/a-absolute-empire.svg"
+                alt="logo ProtoQ">
+        </a>
+
+    </header>
+    <div>
+        <ul class="header2_ul">
+            <li><a href="/src/admin.html">Volver a la página anterior</a></li>
+            <li style="float:right"><a href="/">Salir</a></li>
+
+        </ul>
+    </div>
+
+    <div class="div_consultas">
+        <h1>Consulta de compras</h1>
+        <div class="div_2">
+
+            <div>
+
+                <input class="buscador" data-table="tabla" type="text"
+                    placeholder="Buscar">
+                    <table class="tabla ">
+                        <thead>
+                            <tr>
+                                <th>Comprador</th>
+                                <th>Pedido</th>
+                                <th>Fecha</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>TecnoSmart</td>
+                            <td>ASUS Prime Z390-A x150</td>
+                            <td>12/05/2020</td>
+                        </tr>
+                        <tr>
+                            <td>AllCompu</td>
+                            <td>Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4 3600 x100</td>
+                            <td>15/05/2020</td>
+                        </tr>
+                        <tr>
+                            <td>IDK Manager</td>
+                            <td>EVGA 06G-P4-1667-KR GeForce GTX 1660 Ti x200</td>
+                            <td>17/06/2020</td>
+                        </tr>
+                        <tr>
+                            <td>Novicompu</td>
+                            <td>Western Digital 500GB WD Blue SN550 NVMe SSD interno x100</td>
+                            <td>22/07/2020</td>
+                        </tr>
+                        <tr>
+                            <td>Colegio María Auxiliadora</td>
+                            <td>Corsair HS70 Bluetooth - Auriculares con cable x300</td>
+                            <td>26/07/2020</td>
+                        </tr>
+                        <tr>
+                            <td>Super Paco</td>
+                            <td>Corsair Scimitar RGB Elite x230</td>
+                            <td>01/09/2020</td>
+                        </tr>
+                        <tr>
+                            <td>TecnoSmart</td>
+                            <td>Thermaltake fuente ATX 500 W Smart RGB x100</td>
+                            <td>10/09/2020</td>
+                        </tr>
+                        <tr>
+                            <td>AllCompu</td>
+                            <td>MSI Gaming GeForce RTX 3060 Ti 8GB GDRR6 256-Bit HDMI x500</td>
+                            <td>26/09/2020</td>
+                        </tr>
+                        <tr>
+                            <td>IDK Manager</td>
+                            <td>Disco duro Western Digital WD Blue PC de 1 TB x500</td>
+                            <td>26/10/2020</td>
+                        </tr>
+                    </table>
+    
+                
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <a href="/src/acerca.html">Acerca de</a>
+    </footer>
+
+
+
+
+</body>
+<script type="text/javascript">
+    (function (document) {
+        'use strict';
+
+        var LightTableFilter = (function (Arr) {
+
+            var _input;
+
+            function _onInputEvent(e) {
+                _input = e.target;
+                var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+                Arr.forEach.call(tables, function (table) {
+                    Arr.forEach.call(table.tBodies, function (tbody) {
+                        Arr.forEach.call(tbody.rows, _filter);
+                    });
+                });
+            }
+
+            function _filter(row) {
+                var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+                row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+            }
+
+            return {
+                init: function () {
+                    var inputs = document.getElementsByClassName('buscador');
+                    Arr.forEach.call(inputs, function (input) {
+                        input.oninput = _onInputEvent;
+                    });
+                }
+            };
+        })(Array.prototype);
+
+        document.addEventListener('readystatechange', function () {
+            if (document.readyState === 'complete') {
+                LightTableFilter.init();
+            }
+        });
+
+    })(document);
+</script>
+
+</html>

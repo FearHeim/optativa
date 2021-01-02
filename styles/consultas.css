@@ -1,0 +1,52 @@
+.div_consultas{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+input{
+    width: 50%;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.tabla{
+    padding: 10px;
+    margin: auto;
+    margin-top: 3%;
+    font-size: larger;
+    margin-bottom: 100px;
+}
+
+th, td{
+    border: 3px solid #5c126b9a;
+    border-collapse: collapse;
+    padding: 10px;
+    
+}
+
+th{
+    font-size: x-large;
+    font-weight: bold;
+    width: 0%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .tabla{
+        padding: 10px;
+        margin: auto;
+        margin-top: 3%;
+        font-size: small;
+        margin-bottom: 100px;
+    }
+    th{
+        font-size: large;
+        font-weight: bold;
+        width: 10%;
+    }
+}

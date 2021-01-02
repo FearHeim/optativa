@@ -1,0 +1,35 @@
+.div_admin{
+    text-align: center;
+    margin-top: 5%;
+}
+
+h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.button{
+    margin: 1%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+
+.button:hover{
+    background-color: #5c126b9a;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 0
+}
+
+@media (max-width: 800px) {
+    h2{
+        margin-bottom: 30px;
+    }
+    
+}
