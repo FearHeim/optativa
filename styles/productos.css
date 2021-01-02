@@ -31,6 +31,14 @@ input{
     border-radius: 5px;
 }
 
+.buscar{
+    width: 95%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2%;
+    color: black;
+}
+
 h3{
     font-size: x-large;
     margin-top: 25px;
