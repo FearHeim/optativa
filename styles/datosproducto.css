@@ -1,9 +1,206 @@
 .datos_div{
     display: flex;
+    margin-top: 50px;
+    margin-left: 10px;
+    line-height: 1.6;
+
+}
+
+.datos_div li{
+    list-style: none;
+}
+
+.datos_div_img{
+    width: 100%;
+    margin-top: 10px;
 }
 
 .datos_div_img img{
-    height: 500px;
-    width: 700px;
+    width: 100%;
+}
+
+.div_3{
+    width: 40%;
+    align-self: right;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    line-height: 1.6;
+
+}
+
+.div_3 input{
+    width: 80%;
+}
+
+.div_extra{
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+hr{
+    width: 90%;
+}
+
+.form{
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.form textarea{
+    width: 90%;
+    height: 100px;
+    border-radius: 5px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.form h5{
+    color: rgb(241, 163, 231);
+}
+
+input[type='button'], button{
+    border-radius: 5px;
+    height: 40px;
+    background-color: rgb(47, 11, 56);
+    color: rgb(255, 255, 255);
+    font-size: small;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.interes_div{
+    color: white;
+    margin-top: 50px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+div.galeria {
+    border: 1px solid #ccc;
+}
+
+div.galeria:hover {
+    border: 1px solid #5c126b9a;
+}
+
+div.galeria img {
+    width: 100%;
+    height: 350px;
+}
+
+div.desc {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.galeria_principal {
+    margin-bottom: 10px;
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    cursor: pointer;
+}
+
+/* Para el slider de productos */
+
+
+.tns-controls { text-align: center; margin-bottom: 10px; }
+.tns-controls [aria-controls] {
+  font-size: 15px;
+  margin: 0 5px;
+  padding: 0 1em;
+  height: 2.5em;
+  color: #000;
+  background: #5c126b9a;
+  border-radius: 3px;
+  border: 0;
+  color: white;
+  text-transform: capitalize;
+}
+.lt-ie9 .tns-controls > [aria-controls] {
+  line-height: 2.5em;
+}
+[data-action] {
+  display: block;
+  margin: 10px auto;
+  font-size: 17px;
+  min-width: 3em;
+  text-align: center;
+  background: transparent;
+  border: 0;
+}
+.tns-controls [disabled] { 
+  color: #999999;
+  background: #B3B3B3; 
+  cursor: not-allowed !important;
+}
+.tns-nav {
+  text-align: center;
+  margin: 10px 0;
+}
+.tns-nav > [aria-controls] {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ddd;
+  border: 0;
+}
+.tns-nav > .tns-nav-active { background: #999; }
+
+@media only screen and (max-width: 700px) {
+    .galeria_principal {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+
+    .imagen_slide{
+        width: 100%;
+        height: 350px
+    }
+
+    div.galeria img{
+        height: 200px;
+        width: 100%;
+    }
+    .datos_div{
+        display: inline;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+    .div_3{
+        width: 40%;
+        align-self: right;
+        display: inline;
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+    .div_3 input{
+        margin-left: 5%;
+        width: 90%;
+    }
+    
 }
 

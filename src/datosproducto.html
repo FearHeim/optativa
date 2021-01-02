@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <link  rel="icon" href="https://cdn.discordapp.com/attachments/674855437702660116/795018353492099092/a-absolute-empire_1.svg" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/datosproducto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 </head>
 
 <body>
@@ -24,43 +26,128 @@
             <li><a href="/src/usinformation.html">Sobre Nosotros</a></li>
             <li><a href="/src/productos.html">Productos</a></li>
             <li><a href="/src/contacto.html">Contacto</a></li>
-            <li style="float:right"><a href="/src/transaccion.html"><img class="carrito" src="https://images.vexels.com/media/users/3/200060/isolated/lists/e39eb7217c7b5157d2c9154564d76598-icono-de-carrito-de-compras-rosa.png" alt=""> Carrito de Compras</a></li>
+            <li style="float:right"><a href="/src/transaccion.html"><img class="carrito"
+                        src="https://images.vexels.com/media/users/3/200060/isolated/lists/e39eb7217c7b5157d2c9154564d76598-icono-de-carrito-de-compras-rosa.png"
+                        alt=""> Carrito de Compras</a></li>
         </ul>
     </div>
 
     <div class="datos_div">
-        <div class="datos_div_img">
-            <img src="https://www.muycomputer.com/wp-content/uploads/2019/08/tarjeta-gráfica-2.jpg" alt="Producto">
+        <div>
+            <img class="datos_div_img" src="https://www.evga.com/articles/01092/images/header/ultimate.png"
+                alt="Producto">
         </div>
         <div>
-            <h2>Tarjeta Gráfica GTX 980ti Gigabyte</h2>
+            <h2>EVGA GeForce GTX 1080 Ti Gaming 11GB GDDR5X iCX Technology</h2>
             <ul>
-                <li>Datos</li>
-                <li>Datos</li>
-                <li>Datos</li>
-                <li>Datos</li>
+                <li>Precio: $770.00</li>
+                <li>Producto reacondicionado</li>
+                <li>Marca: EVGA</li>
+            </ul>
+            <ul>
+                <h4>Datos del árticulo</h4>
+                <li>Reloj de base real: 1480 MHz/Real Boost Reloj: 1582 MHz; Detalles de memoria: 11264 MB GDDR5X</li>
+                <li>GPU/memoria/PWM indicador de estado térmico LED RGB</li>
+                <li>Fusible de seguridad para proteger los componentes de daños debido a una instalación incorrecta u
+                    otros fallos de componentes.</li>
             </ul>
         </div>
-        <div>
+        <div class="div_3">
             <ul>
                 <li>US $45.99</li>
-                <li></li>
+                <li>Envio en una semana</li>
             </ul>
             <input onclick="alerta()" type="button" value="Agregar al carrito de compra">
-            <input onclick="" type="button" value="Agregar al carrito de compra">
+            <input onclick="location.href='/src/transaccion.html';" type="button" value="Comprar ahora">
         </div>
     </div>
+<hr>
+    <div class="div_extra">
+        <h1>Más información del producto</h1>
+        <ul>
+            <li>Control separado del ventilador izquierdo/derecho, incluyendo la curva del ventilador.</li>
+            <li>Ventilador GPU determinado por la temperatura de la GPU (ventilador izquierdo).</li>
+            <li>Alimentación/ventilador de memoria determinado por la potencia / temperatura de la memoria (ventilador derecho).</li>
+            <li>Dos ventiladores con rodamiento de bolas con una vida útil de 4 veces más larga y un motor de bajo consumo de energía significa más energía para tu GPU.</li>
+            <li>Hace contacto directo con todos los componentes vitales.</li>
+            <li>Los agujeros de aleta directan el flujo de aire a través de las aletas. La aleta semiabierta maximiza el flujo de aire y las aletas en forma de L aumentan el contacto con la superficie.</li>
+        </ul>
+    </div>
 
+    
+<hr>
+    <div class="form">
+        <form id="form">
+            <h3>Deja tu comentario o pregunta</h3>
+            <h5>Este comentario es público y lo podrán ver otros usuarios</h5>
+            <textarea required type="text" name="" class="mensaje" id="mensaje" placeholder="Comentario"></textarea><br>
+            <button type="submit">Enviar comentario</button>
+        </form>
+    </div>
+
+
+
+    <div>
+        <h2 class="interes_div">Productos sugeridos</h2>
+    </div>
+
+
+    <div class="my-slider galeria_principal">
+        <div class="galeria"> <img src="https://www.spdigital.cl/img/products/new_web/1474042924785-32428520_1371.jpg" alt="Producto"
+                ><div class="desc">16GB RAM Hypex X Ddr4</div></div>
+        <div class="galeria"> <img src="https://www.bhphotovideo.com/images/images1000x1000/acer_nh_q5uaa_008_nitro_i5_9300h_8gb_512gb_ssd_1560811.jpg" alt="Producto"
+                ><div class="desc">Acer Nitro 5 Gaming Laptop</div></div>
+        <div class="galeria"> <img src="https://m.media-amazon.com/images/I/51R5g9v99iL._AC_SX450_.jpg" alt="Producto"
+                ><div class="desc">PNY Nvidia GTX 780 3GB GDDR5</div></div>
+        <div class="galeria"> <img src="https://images-na.ssl-images-amazon.com/images/I/71Uvi%2BIj-vL._AC_SL1500_.jpg" alt="Producto"
+                ><div class="desc">EVGA GeForce RTX 2060 Super SC Ultra Gaming</div></div>
+        <div class="galeria"> <img src="https://i.ebayimg.com/images/g/7e4AAOSwsNZfTYsg/s-l640.jpg" alt="Producto"
+                ><div class="desc">Thermaltake SP-550PCBUS</div></div>
+    </div>
+
+    <div class="clearfix"></div>
 
     <footer>
         <a href="/src/acerca.html">Acerca de</a>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+        const slider = tns({
+            "items": 2,
+            "controls": false,
+            "responsive": {
+                "350": {
+                    "items": 2,
+                    "controls": true,
+                    "edgePadding": 30
+                },
+                "500": {
+                    "items": 3
+                }
+            },
+            "container": ".my-slider",
+            "swipeAngle": false,
+            "speed": 400,
+            "mouseDrag": true
+        });
+    </script>
 </body>
 <script>
     //Función para enviar una alerta al presionar el botón de agregar al carrito de compra
     function alerta() {
         alert("Se ha agregado al carrito");
         event.preventDefault()
+    }
+
+    document.getElementById('form').addEventListener('submit', alertaComentario)
+    function alertaComentario(e) {
+        e.preventDefault()
+        alert("Se ha enviado el mensaje con éxito");
+        const elementos=document.querySelectorAll('.mensaje')
+        elementos.forEach(valor=>{
+            valor.value=""
+        })
     }
 </script>
 
