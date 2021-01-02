@@ -56,18 +56,18 @@
         <div class="formulario_div">
             <h2>Contáctenos directamente</h2>
             <h5 style="color: rgb(241, 163, 231);">Los items con * son obligatorios</h5>
-            <form>
+            <form id="form_contacto">
                 Nombre *
-                <input type="text">
-                Emai *
-                <input type="email">
+                <input class="inputs" required type="text">
+                Email *
+                <input class="inputs" required type="email">
                 Empresa a la que representa *
-                <input type="text">
+                <input class="inputs" required type="text">
                 Teléfono
-                <input type="tel">
+                <input class="inputs" type="tel">
                 Mensaje * <br>
-                <textarea class="mensaje"></textarea><br>
-                <button onclick="alerta()">Enviar</button>
+                <textarea required class="mensaje inputs"></textarea><br>
+                <button  type="submit">Enviar</button>
             </form>
         </div>
     </div>
@@ -76,12 +76,19 @@
 
 
     <footer>
-
+        <a href="/src/acerca.html">Acerca de</a>
     </footer>
 </body>
 <script>
-    function alerta() {
+    //Función para enviar una alerta al presionar el botón de enviar
+    document.getElementById('form_contacto').addEventListener('submit', alerta)
+    function alerta(e) {
+        e.preventDefault()
         alert("Se ha enviado el mensaje con éxito");
+        const elementos=document.querySelectorAll('.inputs')
+        elementos.forEach(valor=>{
+            valor.value=""
+        })
     }
 </script>
 

@@ -60,7 +60,7 @@
                     <option id="Modificar">Modificar pedido</option>
 
                 </select>
-                <button type="owo">Guardar estado</button>
+                <button >Guardar estado</button>
             </form>
             <h4>Estado del pedido</h4>
             <p id="estado1">En espera</p>
@@ -68,6 +68,10 @@
 
         <button onclick="location.href='/src/admin.html';">< Volver</button>
     </div>
+
+    <footer>
+        <a href="/src/acerca.html">Acerca de</a>
+    </footer>
 
 </body>
 <script>
@@ -85,7 +89,7 @@
         let estado=document.getElementById('estado').value;
         document.getElementById("estado1").innerHTML = estado;
         e.preventDefault()
-        alert("Estado del pedido actualizado")
+        alert("Estado del pedido actualizado y ha pasado a: " +estado)
     }
 </script>
 
