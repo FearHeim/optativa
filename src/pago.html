@@ -46,9 +46,9 @@
             <tr class="tabla">
                 <td class="img_ref"><img class="img" src="https://cdn.discordapp.com/attachments/674855437702660116/795125662650073158/ultimate.png"
                         alt="producto"></td>
-                <td>Tarjeta Gráfica GTX 980ti Gigabyte</td>
+                <td>Tarjeta Gráfica GTX 1080ti EVGA</td>
                 <td><input disabled  type="number" value="770" class="monto"  name="" id=" " ></td>
-                <td><input type="number" min="100" value="100" class="monto" onchange="calculo(); calculoSub()"></td>
+                <td><input type="number" min="100" max="1000" value="100" class="monto" onchange="calculo(); calculoSub()"></td>
                 <td><input disabled  id="sub" type="number" class="monto2"></td>
 
             </tr>
@@ -58,7 +58,7 @@
                         alt="producto">
                 <td>Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4 3600 (PC4-28800) C18 1.35 V</td>
                 <td><input disabled type="number" value="87" class="monto1" name="" id=""></td>
-                <td><input type="number" min="100" value="100" class="monto1" onchange="calculo1(); calculoSub()"></td>
+                <td><input type="number" min="100" max="1000" value="100" class="monto1" onchange="calculo1(); calculoSub()"></td>
                 <td><input disabled id="sub1" type="number" class="monto2"></td>
 
             </tr>
@@ -85,8 +85,9 @@
     </div>
 
     <div class="div_but">
-        <input type="button" onclick="location.href='/src/metodo.html';" value="Pagar">
         <input type="button" onclick="location.href='/src/transaccion.html';" value="Volver">
+
+        <input type="button" onclick="location.href='/src/metodo.html';" value="Pagar">
 
 
     </div>
