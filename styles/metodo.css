@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+}
+
+.div_metodo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.div_metodo li{
+    list-style: none;
+}
+
+.div_metodo input{
+    width: 150%;
+    margin-left: -80px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.img_meto{
+    width: 200px;
+}
+
+button{
+    border-radius: 5px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: small;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: -20px;
+
+}
+
+button:hover{
+    background-color: #5c126b9a;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .div_metodo input{
+        width: 100%;
+        margin-left: -15px;
+        border-radius: 10px;
+        padding: 10px;
+    
+    }
+}

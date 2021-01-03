@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/metodo.css">
 
 </head>
 <body>
@@ -28,10 +29,10 @@
         </ul>
     </div>
 
-    <div>
+    <div class="div_metodo">
         <h1>Estas a punto de terminar tu compra</h1>
         <h2>Escoge el método de pago</h2>
-        <button class="button"><a class="a__but" href="https://www.paypal.com/ec/webapps/mpp/home">Paypal</a></button> 
+        <a class="a__but" href="https://www.paypal.com/ec/webapps/mpp/home"><img class="img_meto" src="https://assets.stickpng.com/images/5895cea4cba9841eabab606f.png" class="button"></img> </a>
         <form id="form_metodo" action="">
                 
             
@@ -43,11 +44,11 @@
                 <li>Fecha de Caducidad</li>
                 <input required type="date">
                 <li>Nombre del titular</li>
-                <input required type="text">
+                <input required type="name">
                 <li>Números de seguridad (CVV)</li>
-                <input required type="number" min="100" max="999">
+                <input required type="text" minlength="3" maxlength="3">
                 <li>Dirección</li>
-                <input required type="text">
+                <input required type="text"><br>
                 <button type="submit">Finalizar compra</button>
             </ul>
             
@@ -56,6 +57,7 @@
         </form>
     </div>
 
+ 
     <footer>
         <a href="/src/acerca.html">Acerca de</a>
     </footer>
