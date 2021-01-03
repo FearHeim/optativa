@@ -14,7 +14,7 @@
 
 .inventario{
     justify-content: left;
-
+    line-height: 1.6;
 }
 
 .inventario li{
@@ -31,7 +31,7 @@
 }
 
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0
     
 }

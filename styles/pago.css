@@ -56,4 +56,52 @@ input[type="number"]:disabled {
     background-color: #ffffff;
 }
 
+@media only screen and (max-width: 800px) {
+    .img{
+        display: none;
+    }
+    .img_ref{
+        display: none;
+    }
 
+    .div_tabla{
+        display: inline;
+        font-size: smaller;
+        text-align: center;
+        margin-top: 40px;
+        margin-top: 50px;
+    }
+
+    .tabla{
+        margin-top: 50px;
+    }
+
+    input[type=number]{
+  
+        width: 60px;
+        padding: 0px;
+    }
+    
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+
+    td{
+        font-size: x-small;
+        line-height: 1.5;
+    }
+
+    .div_but{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    input[type=button]{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    
+}
