@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrito</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/transaccion.css">
 </head>
+
 <body>
     <header>
         <a class="logo_a" href="/">
@@ -25,14 +28,33 @@
     </div>
 
 
-    <div>
+    <div class="div_trns">
         <div>
-            <h2>Item a comprar</h2>
-            <ul>
-                <li>Tarjeta Gráfica GTX 980ti Gigabyte</li>
-            </ul>
-            <img  src="https://www.evga.com/articles/01092/images/header/ultimate.png" alt="producto">
+            <h2>Carrito</h2>
+
+            <table>
+                <thead>
+                    <th>Imagen</th>
+                    <th>Producto</th>
+                    <th>Precio Unitario</th>
+                </thead>
+                <tr>
+                    <td> <img class="img" src="https://www.evga.com/articles/01092/images/header/ultimate.png"
+                            alt="producto"></td>
+                    <td>Tarjeta Gráfica GTX 980ti Gigabyte</td>
+                    <td>$770.00</td>
+                </tr>
+                <tr>
+                    <td> <img class="img"
+                            src="https://www.corsair.com/medias/sys_master/images/images/h7a/h49/8988098330654/-CMK8GX4M1D3000C16-Gallery-VENG-LPX-BLK-01.png"
+                            alt="producto">
+                    </td>
+                    <td>Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4 3600 (PC4-28800) C18 1.35 V</td>
+                    <td>$86.99</td>
+                </tr>
+            </table>
         </div>
+
         <div>
             <div>
                 <input onclick="location.href='/src/productos.html';" type="button" value="Continuar comprando">
@@ -45,4 +67,5 @@
         <a href="/src/acerca.html">Acerca de</a>
     </footer>
 </body>
+
 </html>

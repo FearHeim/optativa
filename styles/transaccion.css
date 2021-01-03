@@ -1,0 +1,48 @@
+.div_trns{
+    display: inline;
+    text-align: center;
+}
+
+table{
+    margin: auto;
+    
+}
+
+th, td{
+    border: 3px solid #0000009a;
+    border-collapse: collapse;
+    padding: 10px;
+    
+}
+
+th{
+    font-size: x-large;
+    font-weight: bold;
+    width: 0%;
+}
+
+
+input[type=button]{
+    border-radius: 5px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: small;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type=button]:hover{
+    background-color: #5c126b9a;
+    color: white;
+}
+
+
+.img {
+    width: 200px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}

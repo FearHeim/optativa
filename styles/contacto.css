@@ -40,6 +40,11 @@ button {
     font-weight:500;
 }
 
+button:hover{
+    background-color: #5c126b9a;
+    color: white;
+}
+
 input {
     height: 20px;
     border-radius: 5px;

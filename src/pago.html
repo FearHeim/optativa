@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/pago.css">
 </head>
+
 <body>
 
     <header>
@@ -16,7 +19,7 @@
         </a>
 
     </header>
-    
+
     <div>
         <ul class="header2_ul">
             <li><a href="/src/main.html">Inicio</a></li>
@@ -29,20 +32,115 @@
     </div>
 
 
-    <div>
-        <form action="">
-            <h3>Producto</h3>
-            Unidades<input type="number" placeholder="100" min=100 name="Producto" id="">
-            Subtotal<input type="text" placeholder="20$">
-            IVA <input type="text" placeholder="12%">
-            Total<input type="number" placeholder="2000">$
-            <input type="button" onclick="location.href='/src/metodo.html';" value="Pagar">
-        </form>
+    <div class="div_tabla">
+        <table class="tabla">
+            <thead>
+                <tr class="tabla">
+                    <th>Imagen referencial</th>
+                    <th>Nombre del producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Sub total</th>
+                </tr>
+            </thead>
+            <tr class="tabla">
+                <td><img class="img" src="https://www.evga.com/articles/01092/images/header/ultimate.png"
+                        alt="producto"></td>
+                <td>Tarjeta Gráfica GTX 980ti Gigabyte</td>
+                <td><input disabled  type="number" value="770" class="monto"  name="" id=" " ></td>
+                <td><input type="number" min="100" value="100" class="monto" onchange="calculo(); calculoSub()"></td>
+                <td><input disabled  id="sub" type="number" class="monto2"></td>
+
+            </tr>
+            <tr class="tabla">
+                <td> <img class="img"
+                        src="https://www.corsair.com/medias/sys_master/images/images/h7a/h49/8988098330654/-CMK8GX4M1D3000C16-Gallery-VENG-LPX-BLK-01.png"
+                        alt="producto">
+                <td>Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4 3600 (PC4-28800) C18 1.35 V</td>
+                <td><input disabled type="number" value="87" class="monto1" name="" id=""></td>
+                <td><input type="number" min="100" value="100" class="monto1" onchange="calculo1(); calculoSub()"></td>
+                <td><input disabled id="sub1" type="number" class="monto2"></td>
+
+            </tr>
+            <tr>
+                <th>Sub total: </th>
+                <th>
+                    <input disabled type="number" id="subprin" ></input>
+                </th>
+            </tr>
+            <tr>
+                <th>IVA: </th>
+                <th>
+                    <p>12%</p>
+                </th>
+            </tr>
+            <tr>
+                <th>Total:</th>
+                <th>
+                    <input disabled type="number" id="total"></input>
+                </th>
+            </tr>
+        </table>
         
+    </div>
+
+    <div class="div_but">
+        <input type="button" onclick="location.href='/src/metodo.html';" value="Pagar">
+        <input type="button" onclick="location.href='/src/transaccion.html';" value="Volver">
+
+
     </div>
 
     <footer>
         <a href="/src/acerca.html">Acerca de</a>
     </footer>
+
+    <script>
+        function calculo() {
+            const $total = document.getElementById('sub');
+            let subtotal = 1;
+            [...document.getElementsByClassName("monto")].forEach(function (element) {
+                if (element.value !== '') {
+                    console.log(element.value)
+                    subtotal = subtotal * parseFloat(element.value);
+                    console.log(subtotal)
+                }
+            });
+            $total.value = subtotal;
+        }
+        function calculo1() {
+            const $total = document.getElementById('sub1');
+            let subtotal1 = 1;
+            [...document.getElementsByClassName("monto1")].forEach(function (element) {
+                if (element.value !== '') {
+                    console.log(element.value)
+                    subtotal1 = subtotal1 * parseFloat(element.value);
+                    console.log(subtotal1)
+                }
+            });
+            $total.value = subtotal1;
+        }
+
+        function calculoSub() {
+            const $total = document.getElementById('subprin');
+            let subtotal2 = 0;
+            [...document.getElementsByClassName("monto2")].forEach(function (element) {
+                if (element.value !== '') {
+                    console.log(element.value)
+                    subtotal2 = subtotal2 + parseFloat(element.value);
+                    console.log(subtotal2)
+                    let iva=0.12
+                   let $totalFinal=document.getElementById('total');
+                   let fin=subtotal2*iva;
+                   fin=fin+subtotal2;
+                   $totalFinal.value=fin;
+
+                }
+            });
+            $total.value = subtotal2;
+
+        }
+    </script>
 </body>
+
 </html>

@@ -40,6 +40,10 @@ li a:hover:not(.active) {
     background-color: #5c126b9a;
 }
 
+button{
+    cursor: pointer;
+}
+
 .carrito{
     height: 20px;
 }
