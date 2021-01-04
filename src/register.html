@@ -41,13 +41,14 @@
                 <section class="register_contenedor">
 
                     <form id="form_reg" class="register_contenedor--form">
-                        <input required class="inputemail" type="email" placeholder="Correo">
-                        <input required class="inputnombre" type="Name" placeholder="Nombre">
-                        <input required class="inputapellidos" type="Name" placeholder="Apellidos">
-                        <input required class="inputcontra" type="password" placeholder="Contraseña" minlength="3"
+                        <input  id="inputemail" class="inputemail" type="email" placeholder="Correo">
+                        <input  id="inputnombre" class="inputnombre" type="Name" placeholder="Nombre">
+                        <input  id="inputapellidos" class="inputapellidos" type="Name" placeholder="Apellidos">
+                        <input  id="inputcontra" class="inputcontra" type="password" placeholder="Contraseña" minlength="3"
                             maxlength="10">
                         <button type="submit" class="button">Registrarse</button>
                     </form>
+                    <div id='error'></div>
                     <h5 class="registra">¿Ya tienes cuenta?</h5>
                     <a class="registra2" href="/src/login.html">Inicia sesión</a>
 
@@ -60,16 +61,8 @@
     <footer>
         <a href="/src/acerca.html">Acerca de</a>
     </footer>
+    <script src="/src/validationreg.js"></script>
 </body>
-<script>
 
-    document.getElementById('form_reg').addEventListener('submit', Mensaje);
-
-    function Mensaje(e) {
-        alert("Gracias por crear tu cuenta en ProtoQ, procede a Iniciar Sesión")
-        e.preventDefault()
-        location.href = '/src/register.html'
-    }
-</script>
 
 </html>

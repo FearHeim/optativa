@@ -38,11 +38,12 @@
                 <section class="login_contenedor">
                   
                     <form id="form_principal" class="login_contenedor--form">
-                        <input required id="inputemail" class="inputemail" type="email" placeholder="Correo">
-                        <input required id="contra" class="inputcontra" type="password" placeholder="Contraseña" minlength="3" maxlength="10">
+                        <input  id="inputemail" class="inputemail" type="email" placeholder="Correo">
+                        <input  id="contra" class="inputcontra" type="password" placeholder="Contraseña" minlength="3" maxlength="10">
                         <button type="submit">Ingresar</button>
                       
                     </form>
+                    <div id='error'></div>
                     <h5 class="registra">¿No tienes cuenta?</h5>
                         <a class="registra2" href="/src/register.html">Registrarse</a>
                 </section>
@@ -54,21 +55,8 @@
     <footer>
         <a href="/src/acerca.html">Acerca de</a>
     </footer>
+    <script src="/src/validation.js"></script>
 </body>
 
-<script>
-    document.getElementById('form_principal').addEventListener('submit', VerificarUsuario);
-
-    function VerificarUsuario(e){
-        let email=(document.getElementById('inputemail').value)
-        if(email=="admin@admin.com"){
-            location.href='/src/admin.html'
-        }else{
-            location.href='/src/main.html'
-        }
-        e.preventDefault()
-    }
-    
-</script>
 
 </html>
